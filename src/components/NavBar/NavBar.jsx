@@ -10,7 +10,7 @@ const NavBar = () => {
     // }
 
   return (
-    <div className="xsm:flex xsm:justify-around xsm:p-[4rem] ">
+    <div className="xsm:flex xsm:justify-between xsm:p-[4rem] ">
         <h1>MJaay<sub>autos</sub></h1>
             {/* <button onClick={Toggle} class="relative group">
                 <div class="relative flex flex-col overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
