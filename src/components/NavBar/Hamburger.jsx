@@ -5,12 +5,12 @@ import CompanyFeatures from "./CompanyFeatures";
 const Hamburger = () => {
   const [dropDown, setDropDown] = useState(true);
 
-  function CloseItems(e) {
+  function CloseItems() {
     setDropDown(!dropDown);
   }
 
   return (
-    <button onClick={CloseItems} class="relative group md:hidden lg:hidden xl:hidden 2xl:hidden">
+    <button onClick={CloseItems} class="relative group sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
         {dropDown ? 
         <div class="relative flex flex-col overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
             <div class="transform transition-all duration-150 overflow-hidden -translate-y-5 group-focus:translate-y-3">
