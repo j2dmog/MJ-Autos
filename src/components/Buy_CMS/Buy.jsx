@@ -1,11 +1,14 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
+import UpperBuyPart from './UpperBuyPart'
+import Footer from '../Footer/Footer'
 
 const Buy = () => {
   return (
     <div>
       <NavBar/>
-      <h1 className="text-center">This is a page where to buy our products</h1>
+      <UpperBuyPart/>
+      <Footer/>
     </div>
   )
 }

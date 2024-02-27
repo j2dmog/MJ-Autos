@@ -43,7 +43,7 @@ const MiddleSection = () => {
         <p>Peace of mind, every step of the way</p>
       </div>
       <div className="
-      4xsm:flex 4xsm:flex-col 3xsm:flex 3xsm:flex-col 2xsm:flex 2xsm:flex-col flex justify-center">
+        4xsm:flex 4xsm:flex-col 3xsm:flex 3xsm:flex-col 2xsm:flex 2xsm:flex-col flex justify-center">
         {CardDetails.map((CardDetail, i) => (<TextCards key={i} {...CardDetail} />))}
       </div>
       <div>

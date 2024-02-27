@@ -7,6 +7,18 @@ import Image6 from '../../assets/Images/Image6.png'
 import Image7 from '../../assets/Images/Image7.png'
 import Image8 from '../../assets/Images/Image8.png'
 import Image9 from '../../assets/Images/Image9.png'
+import RoadCar from '../../assets/Images/RoadCar.png'
+import VideoCar from '../../assets/Images/VideoCar.png'
+import search from '../../assets/Icons/search_24px.png'
+import KiaSideView from '../../assets/Images/KiaSideView.png'
+import KiaInterior1 from '../../assets/Images/KiaInterior1.png'
+import KiaInterior2 from '../../assets/Images/KiaInterior2.png'
+import KiaInterior3 from '../../assets/Images/KiaInterior3.png'
+import KiaSideMirror from '../../assets/Images/KiaSideMirror.png'
+import Sedan from '../../assets/Icons/car 1.svg'
+import petrol1 from '../../assets/Icons/petrol 1.svg'
+import automatic_transmission from '../../assets/Icons/automatic-transmission 1.svg'
+
 
 export const ComprehensiveCarDetails = [
     {
@@ -72,4 +84,89 @@ export const ComprehensiveCarDetails = [
         Distance: "35080KM",
         CarPrice: "N14,000,000",
     },
+]
+
+export const roadDatas = [
+    {
+        RoadCar: RoadCar,
+        VideoCar: VideoCar,
+        text1: "Our Garage",
+        text2: "Foreign & Nigerian Used Cars",
+        search: search,
+    },
+]
+
+export const BuyDatas = [
+    {kia: KiaSideView},
+    {kia: KiaInterior1},
+    {kia: KiaInterior2},
+    {kia: KiaInterior3},
+    {kia: KiaSideMirror},
+]
+
+export const OverviewIconDatas = [
+    {
+        Brand: Sedan,
+        type: "Sedan"
+    },
+    {
+        Brand: petrol1,
+        type: "Petrol"
+    },
+    {
+        Brand: automatic_transmission,
+        type: "Automatic"
+    },
+]
+
+export const GeneralInfoDatas = [
+    {
+        Property: "Make",
+        type: "Toyota"
+    },
+    {
+        Property: "Condition",
+        type: "Foreging Used"
+    },
+    {
+        Property: "Model",
+        type: "Corolla",
+    },
+    {
+        Property: "Milage",
+        type: "140,000KM",
+    },
+    {
+        Property: "SedYearan",
+        type: " 2019",
+    },
+    {
+        Property: "Trim",
+        type: "Limited",
+    },
+    {
+        Property: "Transmittion",
+        type: "Automatic",
+    },
+    {
+        Property: "Drivetrian",
+        type: "Front wheel",
+    },
+    {
+        Property: "Colour",
+        type: "Red"
+    },
+    {
+        Property: "Seats",
+    },
+]
+
+export const DescriptionDatas = [
+    {
+        Describe: "Description",
+        span1: "Super Clean accident free toyota",
+        span2: "corolla 2019 with factory reverse",
+        span3: "camera, Clean fabric interior,",
+        span4: "factory fitted air conditioner.",
+    }
 ]
