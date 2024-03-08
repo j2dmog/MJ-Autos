@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Button from "../Input_and_Button/Button"
+import { useEffect } from "react"
 
 
 export const TextCards = ({title,description,pics})=> {
@@ -15,9 +16,18 @@ export const TextCards = ({title,description,pics})=> {
 }
 
 export const CodeDetails = ({DescriptionText,ParagraphText,}) => {
+    
+    useEffect(() => {
+
+        window.scrollTo({bottom: 0, behavior: 'smooth'})
+    }, [])
+
     return (
       <div className='flex flex-col gap-[1rem]'>
-          <h1>M.J.O<sub>autos</sub></h1>
+          <h1 onClick={() => {
+                window.scrollTo({bottom: 0, behavior: "smooth"})
+            }}
+           >M.J.O<sub>autos</sub></h1>
           <p>{DescriptionText}</p>
           <p>{ParagraphText}</p>
       </div>
@@ -83,6 +93,23 @@ export const CommentsCard = ({Image26, Avatar, Afohams, span,ImageStar})=> {
     )
 }
 
+export const SellDetailsCard = ({Image26, ManFace, Afohams, span, ImageStar, fullName, Date}) => {
+    return (
+        <div className="flex w-[38.2rem] h-[30.1rem] gap-[2rem]">
+            <img className='w-[1rem] h-[31rem]' src={Image26} alt="Rectangle26"/>
+            <img className="w-[101px] h-[101px] mt-[4rem]" src={ManFace} alt="ManFace" />
+            <div className=" flex flex-col gap-[2rem] my-[6rem]">
+                <p>{Afohams} <br /> <span>{span}</span></p>
+                <div>
+                    <p>{fullName}</p>
+                    <p>{Date}</p>
+                </div>
+                <img className='my-[1rem] w-[7.5rem] h-[1.5rem] ml-[13rem] ' src={ImageStar} alt="ImageStar" />
+            </div>
+        </div>
+    )
+}
+
 export const  FooterCard = ({Organization,Enquiry,Contact,Info,Nature,Chatting}) => {
     return (
         <div>
@@ -109,5 +136,38 @@ export const  InfoFooterCard = ({SvgLogo,Title}) => {
 export const  SocialIcons = ({Media})=>{
     return (
         <Link><img className="w-[11px] h-[19px]" src={Media} alt="Media" /></Link>
+    )
+}
+
+export const TradeImageCards = ({TradeIcon}) => {
+    return (
+        <div>
+            <img className="w-[140px] h-[140px]" src={TradeIcon} alt="TradeIcon"/>
+        </div>
+    )
+}
+
+export const TradeCards = ({TradeTitle, TradeText}) => {
+    return (
+        <div className="text-[#380623] w-[358px] h-[183px]">
+            <h4 className="font-extrabold">{TradeTitle}</h4>
+            <h4 className="font-semibold">{TradeText}</h4>
+        </div>
+    )
+}
+
+export const FleetOfCarCards = ({Fleet, FleetTitle, FleetText, FleetLogo, Name, FleetDate}) => {
+    return (
+        <div className="w-[21rem] h-[27rem] bg-white flex flex-col gap-[2rem]">
+            <img className="w-[21rem] h-[204px]" src={Fleet} alt="Fleet" />
+            <div className="text-[#380623] text-center flex flex-col gap-[1rem]">
+                <h3 className="text-[24px] font-normal">{FleetTitle}</h3>
+                <p className="text-[14px] font-semibold">{FleetText}</p>
+                <div className="flex text-[#6D7D8B] justify-center">
+                    <img className="w-[22px] h-[22px]" src={FleetLogo} alt="FleetLogo"/>
+                    <p className="text-[14px] font-semibold">{Name} | {FleetDate}</p>
+                </div>
+            </div>
+        </div>
     )
 }

@@ -10,9 +10,7 @@ import bg_Rectangle4 from '../../assets/Images/Rectangle4.png'
 
 const Home = () => {
   return (
-    // <div className="bg-[#f2f0ec]
-    //       ">
-    <div className='
+    <div className=' relative
          '>
          <div className='relative z-10  top-0
               

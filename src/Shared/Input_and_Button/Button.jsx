@@ -1,9 +1,15 @@
 
 
-const Button = ({className, Value}) => {
+const Button = ({className, Value, onClick}) => {
   return (
     <>
-      <button className={className}>{Value}</button>
+      <button 
+      className={className} 
+      onClick={onClick}
+      // window={window} 
+      // bottom={bottom}
+      // behavior={behavior}
+      >{Value}</button>
     </>
   );
 };

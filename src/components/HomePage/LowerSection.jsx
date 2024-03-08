@@ -6,10 +6,17 @@ import Group39468 from '../../assets/Images/Group 39468.svg'
 import Group39477 from '../../assets/Images/Group 39477.png'
 import { CarTypesCard, CommentsCard } from '../../Shared/Cards/Cards'
 import { CarTypesDetails, CommentDetails } from '../../Shared/Cards/Datas'
+import { useEffect } from 'react'
+import Button from '../../Shared/Input_and_Button/Button'
 
 
 
 const LowerSection = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, behavior: 'smooth'})
+    }, [])
+
   return (
     <div className='mt-[15rem] '>
         <h2 className='ml-[6rem] text-black text-[2rem] font-normal my-[1rem] '>Best deals for you </h2>
@@ -35,7 +42,7 @@ const LowerSection = () => {
                                 <h2 className='text-[#380623] font-normal text-[2rem] leading-[2.5rem] w-[31rem] '>Send me great MJaay auto offers and the latest vehicle reviews.</h2>
                                 <div className='flex gap-[1rem] my-[2rem]'>
                                     <input className='bg-[#D9D9D9] text-[#6D7D8B] rounded-[5px] w-[29rem] h-[3.4rem] text-Start p-[1rem] ' type="text" placeholder='Enter your email ' />
-                                    <button className='rounded-[1rem] text-white bg-[#802258] w-[10rem] h-[3.5rem]'>Subscribe </button>
+                                    <Button className='rounded-[1rem] text-white bg-[#802258] w-[10rem] h-[3.5rem]' Value='Subscribe'/>
                                 </div>
                                 <p className='text-[#6D7D8B] font-semibold text-[18px] leading-[29px] w-[35rem] h-[4.5rem] '>By signing up, you agree to receive marketing emails in accordance with our privacy notice. You can unsubscribe at any time.</p>
                             </div>
@@ -43,7 +50,10 @@ const LowerSection = () => {
                         <img className='absolute left-[45rem] top-[18rem] ' src={Group39468} alt="" />
                     </div>
                     <div>
-                        <img src={Group39477} alt="Gr oup39477" />
+                        <img onClick={()=> {
+                            window.scrollTo({top: 0, behavior: "smooth"})
+                        }} 
+                        className="w-[6.9rem] h-[5.1rem]" src={Group39477} alt="Group39477" />
                     </div>
                 </div>
             </div>

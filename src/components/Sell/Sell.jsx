@@ -1,11 +1,13 @@
-import React from 'react'
+import Footer from '../Footer/Footer'
 import NavBar from '../NavBar/NavBar'
+import BodySell from './BodySell'
 
 const Sell = () => {
   return (
     <div>
       <NavBar/>
-      <h1>This is page where you can sell your products</h1>
+      <BodySell/>
+      <Footer/>
     </div>
   )
 }

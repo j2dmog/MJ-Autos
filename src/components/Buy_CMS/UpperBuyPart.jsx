@@ -7,8 +7,15 @@ import RoadCar from '../../assets/Images/RoadCar.png'
 import VideoCar from '../../assets/Images/VideoCar.png'
 import { BrandIcons, CardDetails } from "../../Shared/Cards/Datas"
 import { LogosCards, TextCards } from "../../Shared/Cards/Cards"
+import { useEffect } from "react";
 
 const UpperBuyPart = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, behavior: 'smooth'})
+    }, [])
+
+
   return (
     <div>
         <div className="relative mx-[6rem] my-[4rem] ">
@@ -70,7 +77,10 @@ const UpperBuyPart = () => {
                     4xsm:flex 4xsm:flex-col 3xsm:flex 3xsm:flex-col 2xsm:flex 2xsm:flex-col flex justify-center">
                     {CardDetails.map((CardDetail, i) => (<TextCards key={i} {...CardDetail} />))}
                 </div>
-                <img className="w-[6.9rem] h-[5.1rem]" src={Group39477} alt="Group39477" />
+                <img onClick={()=> {
+                    window.scrollTo({top: 0, behavior: "smooth"})
+                }} 
+                className="w-[6.9rem] h-[5.1rem]" src={Group39477} alt="Group39477" />
             </div>
           </div>
         </div>

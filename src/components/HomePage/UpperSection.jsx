@@ -3,8 +3,17 @@ import { BrandIcons, TextDetails } from '../../Shared/Cards/Datas'
 import { CodeDetails, LogosCards } from '../../Shared/Cards/Cards'
 import Button from '../../Shared/Input_and_Button/Button'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+// import { useEffect } from 'react'
 
 const UpperSection = () => {
+
+    const [exploreCars, setExploreCars] = useState()
+
+    
+
+
+
   return (
     <div>
          <div className=' flex relative h-[35rem] 
@@ -33,14 +42,20 @@ const UpperSection = () => {
                 <div className=' pt-[7rem]
                 4xsm:flex 4xsm:gap-[10px] 4xsm:flex-col
                 flex gap-[2rem] my-[2rem] '>
-                    <Button Value='Get started' className='
+                    <Button 
+                    Value='Get started' className='
                     4xsm:w-auto 4xsm:h-auto
                     rounded-[1rem] text-white bg-[#802258] 2xml:w-[10rem] 2xml:h-[2.5rem] w-[10rem] h-[3.5rem] '/>
-                    <Link to='/ProductHomePage'>
-                        <Button Value='Explore More' className='
+                    {/* <Link to='/ProductHomePage'>
+                        <Button  Value='Explore More' className='
                         4xsm:w-auto 4xsm:h-auto
                         border-2 border-solid border-[#9d557d] rounded-[1rem] w-[12rem] h-[3.5rem] text-[#811b55] '/>
-                    </Link>
+                    </Link> */}
+                    <Button  
+                    Value='Explore More' 
+                    className='
+                        4xsm:w-auto 4xsm:h-auto
+                        border-2 border-solid border-[#9d557d] rounded-[1rem] w-[12rem] h-[3.5rem] text-[#811b55] '/>
                 </div>
             </div>
             <div className='md:w-[600px] lg:w-[50rem] lg:h-[616.66px] xlg:w-[50rem] xlg:h-[616.66px] 2xlg:w-[704.35px] 2xlg:h-[616.66px]'>

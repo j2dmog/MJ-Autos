@@ -15,7 +15,7 @@ const CompanyFeatures = () => {
         <Link>Sell</Link>
         <Link>Services & Repair</Link>
         <Link>Contact</Link>
-        <Link className="text-center w-[6rem] h-[2rem] bg-[#802258] rounded-[2rem] ">Sign in</Link>
+        {/* <Link className="text-center w-[6rem] h-[2rem] bg-[#802258] rounded-[2rem] ">Sign in</Link> */}
     </div>
   )
 }
